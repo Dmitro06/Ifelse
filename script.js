@@ -1,26 +1,26 @@
-let a;
+let a = +prompt("Введите любое число(лучше 10)");
 if (a == 10){
-    console.log("Верно");  
+    alert("Верно");  
 }
 else{
-    console.log("Неверно");
+    alert("Неверно");
 }
 
-let min;
-if (min>0 && min<=15){
-    console.log("Число попадает в первую четверть часа");
+let min = +prompt('Введите число от 0 до 59');
+if (min>=0 && min<=14){
+    alert("Число попадает в первую четверть часа");
 }
-else if(min>15 && min<=30){
-    console.log("Число попадает во вторую четверть часа");
+else if(min>=15 && min<=29){
+    alert("Число попадает во вторую четверть часа");
 }
-else if(min>30 && min<=45){
-    console.log("Число попадает в третюю четверть часа");
+else if(min>=30 && min<=44){
+    alert("Число попадает в третюю четверть часа");
 }
-else if(min>45 && min<=59){
-    console.log("Число попадает в четвёртую четверть часа");
+else if(min>=45 && min<=59){
+    alert("Число попадает в четвёртую четверть часа");
 }
 else{
-    console.log("Ви ввели не правильное число ");
+    alert("Ви ввели не правильное число ");
 }
 
 console.log("typeof undefined: ", typeof undefined) // "undefined"
